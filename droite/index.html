@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Repérage sur une droite</title>
+        <script src="canvas.js" defer></script>
+        <link rel="stylesheet" href="../style.css" type="text/css" />
+    </head>
+    <body>
+	
+		<span class="consigne" id='consigne'></span> <br/>
+		
+        <canvas id="mon_canvas" width="600" height="200">
+            Message pour les navigateurs ne supportant pas encore canvas.
+        </canvas>
+        <br/>
+        	<input class="bouton" type="button" name="reset" id="reset" onclick="initialisation();" value="Nouvelle configuration"/>
+        	<input class="bouton" type="button" name="aide" id="aide" onclick="afficheaide();" value="Aide"/>
+			<input class="bouton" type="button" name="diff" id="diff" onclick="changedifficulte();" value="difficulte=simple"/>
+			<br/>
+			<input class="bouton" type="button" name="tuto" id="tuto" onclick="tutoriel(0);" value="Tutoriel"/><br/>
+			<a class="bouton" href="../droite/">Axe gradué</a><a class="bouton" href="../plan/">Plan</a><a class="bouton" href="../espace/">Espace</a>
+			<span style="msg">Arnaud DURAND 23/12/16 GPL v2 utilisation commerciale interdite <a href='http://mathix.org'>mathix.org</a></span>
+    </body>
+</html>
