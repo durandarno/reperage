@@ -4,7 +4,10 @@ aide=0;
 difficulte=0;
 tutorielencours=false;
 
-
+function affichenombreavecvirgule(nombre)
+{
+	return nombre.toString().replace(".",",");
+}
 function tutoriel(nbetape)
 {
 	ecritconsigne('Dans le repère (O;I,J,K), placer le point H de coordonnées (2;1;1) :');
@@ -251,7 +254,7 @@ canvas.addEventListener('click', function(evt) {
 								correction(context,coorx,coory,coorz);
 								ecritlettre(context,"H",posx,posy);
 								context.drawImage(img,posx-7, posy-7);
-								ecritcorrection('BRAVO !! Tu as trouvé le point H de coordonnées('+mathcoorx+';'+mathcoory+';'+mathcoorz+')',true);
+								ecritcorrection('BRAVO !! Tu as trouvé le point H de coordonnées('+affichenombreavecvirgule(mathcoorx)+';'+affichenombreavecvirgule(mathcoory)+';'+affichenombreavecvirgule(mathcoorz)+')',true);
 							}
 							else
 							{
@@ -259,7 +262,7 @@ canvas.addEventListener('click', function(evt) {
 								correction(context,coorx,coory,coorz);
 								ecritlettre(context,"H",posx,posy);
 								context.drawImage(img, posx-7, posy-7);							
-								ecritcorrection('NON !!!!! Tu n as pas trouvé le point H de coordonnées('+mathcoorx+';'+mathcoory+';'+mathcoorz+')',false);
+								ecritcorrection('NON !!!!! Tu n as pas trouvé le point H de coordonnées('+affichenombreavecvirgule(mathcoorx)+';'+affichenombreavecvirgule(mathcoory)+';'+affichenombreavecvirgule(mathcoorz)+')',false);
 							}
 							fige=1;
 							desactivebouton(true);
@@ -485,7 +488,7 @@ function positionnelettreH(context,coorx,coory,coorz)
 	mathcoory=coory/echelley;
 	mathcoorz=(decoupez-coorz)/echellez;
 	//ecritlettre(context,"H",posx,posy);
-	ecritconsigne('Dans le repère (O;I,J,K), placer le point H de coordonnées ('+mathcoorx+';'+mathcoory+';'+mathcoorz+')');
+	ecritconsigne('Dans le repère (O;I,J,K), placer le point H de coordonnées ('+affichenombreavecvirgule(mathcoorx)+';'+affichenombreavecvirgule(mathcoory)+';'+affichenombreavecvirgule(mathcoorz)+')');
 	//alert(mathcoorx+' '+mathcoory+' '+mathcoorz);
 	context.closePath();
 }
