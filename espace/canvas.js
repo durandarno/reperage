@@ -262,7 +262,7 @@ canvas.addEventListener('click', function(evt) {
 								correction(context,coorx,coory,coorz);
 								ecritlettre(context,"H",posx,posy);
 								context.drawImage(img, posx-7, posy-7);							
-								ecritcorrection('NON !!!!! Tu n as pas trouvé le point H de coordonnées('+affichenombreavecvirgule(mathcoorx)+';'+affichenombreavecvirgule(mathcoory)+';'+affichenombreavecvirgule(mathcoorz)+')',false);
+								ecritcorrection('NON !!!!! Tu n\'as pas trouvé le point H de coordonnées('+affichenombreavecvirgule(mathcoorx)+';'+affichenombreavecvirgule(mathcoory)+';'+affichenombreavecvirgule(mathcoorz)+')',false);
 							}
 							fige=1;
 							desactivebouton(true);
