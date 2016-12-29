@@ -222,11 +222,11 @@ if (fige==0)
 			{
 				if (difficulte==0)
 				{
-					ecritcorrection('NON!!!!! Tu n as pas trouvé le point H('+affichenombreavecvirgule(mathcoorx)+') mais H('+affichenombreavecvirgule(coordx)+') !',false);
+					ecritcorrection('NON!!!!! Tu n\'as pas trouvé le point H('+affichenombreavecvirgule(mathcoorx)+') mais H('+affichenombreavecvirgule(coordx)+') !',false);
 				}
 				else
 				{
-					ecritcorrection('NON!!!!! Tu n as pas trouvé le point H(<div class="fraction"><span class="fup">'+Math.round(mathcoorx*pas)+'</span><span class="bar">/</span><span class="fdn">'+pas+'</span></div>) mais H(<div class="fraction"><span class="fup">'+Math.round(coordx*pas)+'</span><span class="bar">/</span><span class="fdn">'+pas+'</span></div>)',false);
+					ecritcorrection('NON!!!!! Tu n\'as pas trouvé le point H(<div class="fraction"><span class="fup">'+Math.round(mathcoorx*pas)+'</span><span class="bar">/</span><span class="fdn">'+pas+'</span></div>) mais H(<div class="fraction"><span class="fup">'+Math.round(coordx*pas)+'</span><span class="bar">/</span><span class="fdn">'+pas+'</span></div>)',false);
 				}
 				
 				
